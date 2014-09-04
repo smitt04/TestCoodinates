@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestCoordinates" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oo7-us-jXr">
+                                <rect key="frame" x="258" y="65" width="84" height="30"/>
+                                <color key="backgroundColor" red="0.29803921570000003" green="0.72549019609999998" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="OkE-0n-Pzc"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frame is ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hyc-DO-vi6">
+                                <rect key="frame" x="105" y="123" width="390" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="390" id="S8a-7N-EVh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Usv-gP-45G">
+                                <rect key="frame" x="212" y="159" width="176" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="176" id="ybW-xx-Eot"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Usv-gP-45G" secondAttribute="centerX" id="0Zm-oe-Zva"/>
+                            <constraint firstItem="Usv-gP-45G" firstAttribute="top" secondItem="Hyc-DO-vi6" secondAttribute="bottom" constant="15" id="Fhh-JU-9fR"/>
+                            <constraint firstAttribute="centerX" secondItem="Hyc-DO-vi6" secondAttribute="centerX" id="Gfv-Uc-4bA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Hyc-DO-vi6" secondAttribute="bottom" constant="456" id="Gva-pi-Jlj"/>
+                            <constraint firstItem="Hyc-DO-vi6" firstAttribute="top" secondItem="Oo7-us-jXr" secondAttribute="bottom" constant="28" id="ThZ-M5-frF"/>
+                            <constraint firstAttribute="centerX" secondItem="Oo7-us-jXr" secondAttribute="centerX" id="ZiP-QA-tzP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="Oo7-us-jXr" id="5dp-se-h64"/>
+                        <outlet property="label" destination="Hyc-DO-vi6" id="CFM-Za-yIx"/>
+                        <outlet property="version" destination="Usv-gP-45G" id="pUc-EX-rJ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
